@@ -2,6 +2,7 @@ package org.example;
 
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.RoundEnvironment;
+import javax.annotation.processing.SupportedAnnotationTypes;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 import javax.lang.model.type.ExecutableType;
@@ -13,6 +14,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@SupportedAnnotationTypes("BuilderField")
 public class BuildProcessor extends AbstractProcessor {
 
     @Override
